@@ -15,7 +15,7 @@ function result() {
     } else if (BLOCK === "prod") {
         text = `La multiplicacion: ${NUM1} * ${NUM2} = <span style="color: blue;">${NUM1 * NUM2}</span>`;
     } else if (BLOCK === "qout") {
-        let res = (NUM2 !== 0) ? (NUM1 / NUM2).toFixed(0) : "Error (no se puede dividir por 0)";
+        let res = (NUM2 !== 0) ? (NUM1 / NUM2).toFixed(2) : "Error (no se puede dividir por 0)";
         text = `La division de: ${NUM1} / ${NUM2} = <span style="color: blue;">${res}</span>`;
     }
 
